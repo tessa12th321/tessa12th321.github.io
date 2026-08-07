@@ -836,9 +836,9 @@
     const service = document.getElementById('service').value;
     const msg = document.getElementById('msg').value;
     const text = encodeURIComponent(
-      \`Bonjour, je m'appelle \${nom} (\${tel}).\nService souhaité : \${service}\nDétails : \${msg}\`
+      `Bonjour, je m'appelle ${nom} (${tel}).\nService souhaité : ${service}\nDétails : ${msg}`
     );
-    window.open(\`https://wa.me/243979396632?text=\${text}\`, '_blank');
+    window.open(`https://wa.me/243979396632?text=${text}`, '_blank');
     return false;
   }
 </script>
